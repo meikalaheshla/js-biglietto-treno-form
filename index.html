@@ -15,17 +15,22 @@
     <main>
         <div>
             <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
-            <form action="js/script.js">
 
 
 
+
+            <div>
 
                 <label for="fullname">Nome cognome</label>
-                <input type="text" id="fullname" value="ciccio pasticcio">
+                <input type="text" id="fullname" placeholder="ciccio pasticcio">
+            </div>
+            <div>
 
 
                 <label for="kmtodo"> Km da percorrere</label>
-                <input type="number" id="kmtodo" min="1" value="23">
+                <input type="text" id="kmtodo" min="1">
+            </div>
+            <div>
 
 
                 <label for="age-groups"> Fascia d'età</label>
@@ -34,16 +39,19 @@
                     <option value="maggiorenne">Maggiorenne</option>
                     <option value="oversixtyfive"> Over 65</option>
                 </select>
+            </div>
+
+
+            <div>
 
 
                 <button id="genera">Genera</button>
                 <button id="annulla">Annulla</button>
+            </div>
 
 
 
 
-
-            </form>
             <div id="biglietto">
                 <h2> Il TUO BIGLIETTO</h2>
                 <div>
