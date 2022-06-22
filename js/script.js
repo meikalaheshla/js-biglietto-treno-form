@@ -1,11 +1,46 @@
-// Il programma dovrà mostrare un form da compilare con cui chiedere all'utente il numero di chilometri che vuole percorrere e l'età del passeggero.
-// Sulla base di queste informazioni dovrà calcolare il prezzo totale del viaggio, secondo queste regole:
-// il prezzo del biglietto è definito in base ai km (0.21 € al km)
-// va applicato uno sconto del 20% per i minorenni
-// va applicato uno sconto del 40% per gli over 65.
-// Il recap dei dati e l'output del prezzo finale va stampato in pagina (formattato con massimo due decimali, per indicare centesimi sul prezzo).
-// Bonus:
-// Aggiungere stile in modo da avere una bella pagina per la nostra compagnia di treni. Allego un'immagine di riferimento per chi non ha fantasia. :occhiolino:
-// Potete usare quel che vi pare (Bootstrap, bool12 , CSS plain)
-// Se volete potete anche spingervi al responsive ma l'importante è che facciate funzionare il form e stampare correttamente i dati del biglietto!
-// Buon lavoro!
+
+
+const fullName = document.getElementById('fullname').value
+const travelLenght = parseInt(document.getElementById('kmtodo').value)
+const travelerAge = document.getElementById('age-groups').value
+let TicketPrice = travelLenght * 0.21
+const btnGenerate = document.getElementById('genera')
+const btnCancel = document.getElementById('annulla')
+const ticket = document.getElementById('biglietto')
+const nameDisplayer = document.getElementById('name-tab')
+const priceDisplayer = document.getElementById('price-tab')
+const offeringDsiplayer = document.getElementById('offerta')
+console.log(fullName, travelLenght, travelerAge, TicketPrice)
+
+
+
+console.log(TicketPrice)
+
+btnGenerate.addEventListener('click', function () {
+    if (travelerAge === 'minorenne') {
+        const youngDiscount = TicketPrice * 0.20
+        TicketPrice = TicketPrice - youngDiscount
+        offeringDsiplayer.innerText = `offerta giovani`
+
+        console.log(youngDiscount)
+
+    } else if (travelerAge === 'oversixtyfive') {
+        const oldDiscount = TicketPrice * 0.40
+        TicketPrice = TicketPrice - oldDiscount
+        offeringDsiplayer.innerText = `offerta over 65`
+
+        console.log(oldDiscount)
+
+
+    } else {
+        offeringDsiplayer.innerText = `biglietto intero`
+    }
+    nameDisplayer.innerText = fullName
+    priceDisplayer.innerText = `€ ${TicketPrice}`
+
+
+
+})
+
+
+

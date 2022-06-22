@@ -14,16 +14,61 @@
 <body>
     <main>
         <div>
+            <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+            <form action="js/script.js">
 
-            <form action="">
-                <label for="fullname">Insert your full name:</label>
+
+
+
+                <label for="fullname">Nome cognome</label>
                 <input type="text" id="fullname" value="ciccio pasticcio">
 
 
-            </form>
-        </div>
-        <div>
+                <label for="kmtodo"> Km da percorrere</label>
+                <input type="number" id="kmtodo" min="1" value="23">
 
+
+                <label for="age-groups"> Fascia d'età</label>
+                <select name="" id="age-groups">
+                    <option value="minorenne">Minorenne</option>
+                    <option value="maggiorenne">Maggiorenne</option>
+                    <option value="oversixtyfive"> Over 65</option>
+                </select>
+
+
+                <button id="genera">Genera</button>
+                <button id="annulla">Annulla</button>
+
+
+
+
+
+            </form>
+            <div id="biglietto">
+                <h2> Il TUO BIGLIETTO</h2>
+                <div>
+                    <table>
+                        <tr>
+                            <th>
+                                NOME PASSEGGERO
+                            </th>
+                            <th>Offerta</th>
+                            <th>Carrozza</th>
+                            <th>Codice CP</th>
+                            <th id="price-display">Costo biglietto</th>
+                        </tr>
+                        <tr>
+                            <td id="name-tab"></td>
+                            <td id="offerta"></td>
+                            <td>5</td>
+                            <td>92911</td>
+                            <td id="price-tab"></td>
+
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
         </div>
     </main>
     <script src="js/script.js"></script>
