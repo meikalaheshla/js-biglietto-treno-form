@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOOTSRTAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
 
     <!-- MY STYLE -->
     <link rel="stylesheet" href="css/style.css">
@@ -12,72 +16,7 @@
 </head>
 
 <body>
-    <main>
-        <div>
-            <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
 
-
-
-
-            <div>
-
-                <label for="fullname">Nome cognome</label>
-                <input type="text" id="fullname" placeholder="ciccio pasticcio">
-            </div>
-            <div>
-
-
-                <label for="kmtodo"> Km da percorrere</label>
-                <input type="text" id="kmtodo" min="1">
-            </div>
-            <div>
-
-
-                <label for="age-groups"> Fascia d'età</label>
-                <select name="" id="age-groups">
-                    <option value="minorenne">Minorenne</option>
-                    <option value="maggiorenne">Maggiorenne</option>
-                    <option value="oversixtyfive"> Over 65</option>
-                </select>
-            </div>
-
-
-            <div>
-
-
-                <button id="genera">Genera</button>
-                <button id="annulla">Annulla</button>
-            </div>
-
-
-
-
-            <div id="biglietto">
-                <h2> Il TUO BIGLIETTO</h2>
-                <div>
-                    <table>
-                        <tr>
-                            <th>
-                                NOME PASSEGGERO
-                            </th>
-                            <th>Offerta</th>
-                            <th>Carrozza</th>
-                            <th>Codice CP</th>
-                            <th id="price-display">Costo biglietto</th>
-                        </tr>
-                        <tr>
-                            <td id="name-tab"></td>
-                            <td id="offerta"></td>
-                            <td>5</td>
-                            <td>92911</td>
-                            <td id="price-tab"></td>
-
-                        </tr>
-                    </table>
-                </div>
-
-            </div>
-        </div>
     </main>
     <script src="js/script.js"></script>
 </body>
