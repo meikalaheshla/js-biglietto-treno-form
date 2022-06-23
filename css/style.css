@@ -1,0 +1,62 @@
+.col>div {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+
+body {
+    background-color: green;
+}
+
+/* SCHEDA INPUT DATI  */
+#form {
+    box-shadow: 10px 10px 10px lightgreen;
+    background-image: url(../img/1378572.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+}
+
+#form label {
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    color: lightgreen;
+}
+
+/* TICKET */
+
+#ticket {
+    background-color: peachpuff;
+    background-image: url(../img/1378572.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    border-radius: 1rem;
+    text-align: end;
+
+
+
+}
+
+#ticket h3 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 40px;
+
+
+}
+
+#ticket h4 {
+
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 80px;
+}
+
+#ticket h5 {
+
+    font-size: 23px;
+
+
+}

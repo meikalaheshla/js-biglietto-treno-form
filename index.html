@@ -16,8 +16,100 @@
 </head>
 
 <body>
+    <main>
+        <section class="container">
 
+            <div class=" text-center">
+                <h2 class="fw-bold m-5 display-4">Calcola il prezzo del tuo biglietto</h2>
+                <div id="form" class="bg-dark text-light rounded-pill">
+
+                    <div class="row">
+                        <div class="col">
+                            <div>
+
+                                <label for="name"> Nome Cognome</label>
+                                <input id="name" type="text">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div>
+                                <label for="name">Km da percorrere</label>
+                                <input id="name" type="number">
+
+                            </div>
+
+                        </div>
+                        <div class="col">
+                            <div>
+                                <label for="age-range">Fascia d'età</label>
+                                <select name="" id="age-range">
+                                    <option value="maj">Maggiorenne</option>
+                                    <option value="min">Minorenne</option>
+                                    <option value="over">Over 65</option>
+                                </select>
+
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="mb-4" id="button-box">
+                                <button class="btn btn-outline-success  rounded-pill "
+                                    id="generate-btn">Generate</button>
+                                <button class="btn btn btn-outline-danger rounded-pill" id="cancel-btn">Cancel</button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div id="ticket-box">
+                <h2 class=" text-center fw-bold m-5 display-4">Il tuo Biglietto:</h2>
+                <div class="p-4" id="ticket">
+                    <h3 class="display-6 fw-bold">Dettaglio passeggeri</h3>
+                    <hr>
+                    <div class="row row-5">
+                        <div class="col">
+                            <h3>NOME PASSEGGERO</h3>
+                            <h5 id="name">adsfgsdg</h5>
+
+                        </div>
+                        <div class="col">
+                            <h4>Offerta</h4>
+                            <h5 id="offer">sdfgsdfg</h5>
+                        </div>
+                        <div class="col">
+                            <h4>Carrozza</h4>
+                            <h5 id="vagon">sdfgsdfg</h5>
+                        </div>
+                        <div class="col">
+                            <h4>Codice CP</h4>
+                            <h5 id="pnr">sdfgsdfg</h5>
+                        </div>
+                        <div class="col">
+                            <h4>Costo biglietto</h4>
+                            <h5 id="price">sdfgsdfg</h5>
+                        </div>
+
+                    </div>
+                    <hr>
+                    <div class="">
+                        <button class="m-3 btn btn-outline-dark" id="buy-button"> BUY TICKET</button>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+
+        </section>
     </main>
+
+    <!-- LINK MY JS  -->
     <script src="js/script.js"></script>
 </body>
 
